@@ -19,7 +19,6 @@ def higherLowerGame():
     # some initialization
     current_score = 0
     choice = 0
-    not_choice = 0
     game_data = random.sample(data, 2)
     # start the game
     isWinner = True
