@@ -51,6 +51,9 @@ def higherLowerGame():
             current_score += 1
             del game_data[1]
             game_data.append(random.choice(data))
+            while game_data[0] == game_data[1]:
+                del game_data[1]
+                game_data.append(random.choice(data))
         else:
             print(logo)
             isWinner = False
